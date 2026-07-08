@@ -1,0 +1,22 @@
+# Smithery deployment config — https://smithery.ai/docs/build/project-config/smithery.yaml
+# API key is OPTIONAL: keyless installs use ScamCheck's free anonymous tier
+# (IP rate-limited); a key unlocks higher limits.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required: []
+    properties:
+      scamcheckApiKey:
+        type: string
+        title: ScamCheck API Key (optional)
+        description: >-
+          Optional — the server works without a key on the free anonymous tier.
+          Get a free key for higher limits at
+          https://www.scamcheck.tech/dashboard/developer
+  commandFunction: |-
+    (config) => ({
+      command: "node",
+      args: ["dist/index.js"],
+      env: config.scamcheckApiKey ? { SCAMCHECK_API_KEY: config.scamcheckApiKey } : {}
+    })

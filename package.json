@@ -1,0 +1,46 @@
+{
+  "name": "scamcheck-mcp-server",
+  "version": "1.1.1",
+  "description": "MCP server for ScamCheck — scan suspicious messages, URLs, and text for scams using AI",
+  "main": "dist/index.js",
+  "bin": {
+    "scamcheck-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol",
+    "scam",
+    "scam-checker",
+    "phishing",
+    "fraud-detection",
+    "cybersecurity",
+    "url-checker",
+    "claude",
+    "anthropic",
+    "security"
+  ],
+  "author": "smijo",
+  "homepage": "https://www.scamcheck.tech",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smijo-geek/scamcheck-mcp-server.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/smijo-geek/scamcheck-mcp-server/issues"
+  }
+}
