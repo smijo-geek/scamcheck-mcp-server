@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.smijo-geek/scamcheck-mcp-server",
-  "description": "Scan suspicious messages, URLs, and text for scams with AI. Verdict, risk score 0-100, category, and next steps. Free tier, no API key required.",
+  "description": "Scan suspicious messages, URLs, and text for scams with AI. Free tier - no API key required.",
   "version": "1.1.2",
   "repository": {
     "url": "https://github.com/smijo-geek/scamcheck-mcp-server",
